@@ -6,6 +6,8 @@
     --pure:#FFFFFF;
     --ternary:#898989;
     --light:#F2F2F2;
+    --secondary:#070600;
+
 
 }
 html{
@@ -143,4 +145,71 @@ section.about .social a img{
 
 section.about .social a:hover{
     background: var(--primary);
+}
+
+.section-heading{
+    color: var(--secondary);
+    text-align: center;
+    margin-bottom: 1rem;
+    line-height: 0.5;
+}
+
+.section-heading + p{
+    color: var(--ternary);
+    font-family: 'Lato', sans-serif;
+    margin-bottom: 8rem;
+    text-align: center;
+
+}
+
+.section-heading span{
+    color: var(--primary);
+}
+
+section.skills{
+    background: var(--light);
+}
+
+section.skills .card-wrapper{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 2rem;
+    grid-row-gap: 6rem;
+}
+
+section.skills .card-wrapper .card{
+    background: var(--pure);
+    padding: 3rem 2rem;
+    position: relative;
+    padding-top: 5rem;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+section.skills .card-wrapper .card img{
+    position: absolute;
+    top: -3.5rem;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+section.skills .card-wrapper .card h2{
+    font-weight: 400;
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+}
+
+section.skills .card-wrapper .card p{
+    font-family: 'Lato',sans-serif;
+    color: var(--ternary);
+    line-height: 1.6;
+}
+
+section.skills .card-wrapper .card:hover{
+    background: var(--dark);
+
+}
+
+section.skills .card-wrapper .card:hover h2, section.skills .card-wrapper .card:hover p{
+    color: var(--pure);
 }
